@@ -7,7 +7,7 @@ warnings.filterwarnings("ignore")
 AUTOTUNE = tf.data.experimental.AUTOTUNE
 
 # Loading cifar10 dataset
-(x_train, y_train), (x_test, y_test) =  np.load("../../train_imgs.npz")['data'], np.load('../../train_lbs.npz')['data'], np.load("../../test_imgs.npz")['data'], np.load("../../test_lbs.npz")['data']
+x_train, y_train, x_test, y_test =  np.load("../../train_imgs.npz")['data'], np.load('../../train_lbs.npz')['data'], np.load("../../test_imgs.npz")['data'], np.load("../../test_lbs.npz")['data']
 
 # Printing the shape of the data
 print(x_train.shape, y_train.shape, x_test.shape, y_test.shape)
